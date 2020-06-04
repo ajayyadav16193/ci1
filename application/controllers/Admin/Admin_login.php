@@ -373,11 +373,6 @@
 			}
 		}
 
-		public function downloadallusers()
-		{
-			print_r(1);
-		}
-
 		public function admin_logout()
 		{
 			$this->session->unset_userdata('Profile_data');
