@@ -25,7 +25,7 @@
 			</div>
 			<div class="col-md-12">
 				<h2 align="center"><strong><u>All Cities</u></strong></h2>
-				<table border="1" cellspacing="5" cellpadding="5" align="center"  style="text-align: center" class="datatable-1 table table-bordered table-striped display">
+				<table border="1" cellspacing="5" cellpadding="5" align="center"  style="text-align: center" class="datatable-1 table table-bordered table-striped display" id="mytable">
 					<thead>
 						<tr style="background:#CCC;" class="text-center">
 						  <th>Sr.No.</th>

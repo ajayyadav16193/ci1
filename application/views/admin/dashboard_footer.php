@@ -28,8 +28,8 @@
 		<!-- <script type="text/javascript" src="../wp-content/themes/piha/js/top-bar.js" ></script> -->
 		<!-- <script type="text/javascript" src="../wp-content/themes/piha/js/bsa-ads.js" ></script> -->
 <script type="text/javascript">
-    $(document).ready(function () {
-        console.log(2);
+    // $(document).ready(function () {
+        // console.log(2);
 
       function uStatus(id,status) {
         // console.log(id);
@@ -43,14 +43,11 @@
               url : '<?php echo base_url().'admin/admin_login/country_status'?>',
               data : data,
               success : function () {
-                // let tableId = document.getElementById('mytable');
-                // console.log(tableId);
-                // tableId.refresh();
-                // $("#mytable").DataTable().ajax.refresh(); 
                 console.log(1);
+                $("#mytable").load ( window.location + " #mytable ");
+                  alert("Country status updated successfully.");
               }
           });
-            alert("Country status updated successfully.");
         }
       }
 
@@ -66,10 +63,10 @@
             url : '<?php echo base_url().'admin/admin_login/state_status' ?>',
             data : data,
             success : function () {
-              location.reload();
+                $("#mytable").load ( window.location + " #mytable ");
+                  alert("State status updated successfully.");
             }
           });
-         alert("State status updated successfully.");
         }
       }
 
@@ -85,10 +82,10 @@
             url : '<?php echo base_url().'admin/admin_login/city_status' ?>',
             data : data,
             success : function () {
-              location.reload();
+                $("#mytable").load ( window.location + " #mytable ");
+                alert("City status updated successfully.");
             }
           });
-         alert("City status updated successfully.");
         }
       }
        // $('#ustatus').click(function () {
@@ -107,7 +104,7 @@
                 // }
             // });
        // });
-    });
+    // });
 </script>
 </body>
 </html>
